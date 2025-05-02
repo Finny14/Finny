@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rak Babe Na</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="love">Rak</span> Babe Na🩷</h1>
+        <div class="card">
+            <p class="question">Mon Rak Finn Mai?</p>
+            <div class="bear">
+                <img src="https://i.pinimg.com/originals/3c/f3/55/3cf35517dd9598e8afb85ed1652ff878.gif" alt="Cute bear gif" width="250">
+              </div>
+            <div class="buttons">
+                <button class="yes">Yes</button>
+                <button class="no" id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        const card = document.querySelector('.card');
+        const yesBtn = document.querySelector('.yes');
+      
+        noBtn.addEventListener('mouseover', () => {
+          const cardRect = card.getBoundingClientRect();
+          const maxX = card.clientWidth - noBtn.offsetWidth;
+          const maxY = card.clientHeight - noBtn.offsetHeight;
+      
+          const randX = Math.floor(Math.random() * maxX);
+          const randY = Math.floor(Math.random() * maxY);
+      
+          noBtn.style.position = 'absolute';
+          noBtn.style.left = randX + 'px';
+          noBtn.style.top = randY + 'px';
+        });
+      
+        yesBtn.addEventListener('click', () => {
+          window.location.href = 'next.html';
+        });
+      </script>
+</body>
+</html>
