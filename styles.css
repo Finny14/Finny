@@ -1,0 +1,65 @@
+
+body {
+    background-color: #f3d3e0;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.Mon {
+    color: #FF99CC;
+}
+
+.card {
+    background: #f3f3f3;
+    color: #333;
+    padding: 60px;
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.question {
+    font-size: 30px;
+    color: #e94d58;
+}
+
+.bear {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.buttons {
+    position: relative;
+    height: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes {
+    background: #e94d58;
+    color: white;
+}
+
+.no {
+    background: white;
+    color: #e94d58;
+    border: 2px solid #e94d58;
+}
